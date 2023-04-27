@@ -22,7 +22,7 @@ pipeline {
         
         stage ("plan") {
             steps {
-                bat ('terraform plan') 
+                sh ( 'terraform plan' ) 
             }
         }
 
